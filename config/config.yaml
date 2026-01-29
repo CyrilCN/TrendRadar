@@ -94,16 +94,59 @@ rss:
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
       # max_age_days: 1               # 示例：只推送1天内的文章
-
-    - id: "ruanyifeng"
-      name: "阮一峰的网络日志"
-      url: "http://www.ruanyifeng.com/blog/atom.xml"
-      # max_age_days: 7               # 示例：推送7天内的文章（更新较慢的博客）
     
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
-      enabled: false                  # 禁用
+      # enabled: false                  # 禁用
+
+    - id: "BBC News - Home"
+      name: "BBC News"
+      url: "http://feeds.bbci.co.uk/news/rss.xml"
+      
+    - id: "World news - The Guardian"
+      name: "World news"
+      url: "https://www.theguardian.com/world/rss"
+
+      - id: "Hong Kong Free Press HKFP"
+      name: "HKFP"
+      url: "https://www.theguardian.com/world/rss"
+
+      - id: "香港新聞RSS - 香港經濟日報"
+      name: "香港經濟日報"
+      url: "https://www.hket.com/rss/hongkong"
+
+      - id: "News - South China Morning Post"
+      name: "South China Morning Post"
+      url: "https://www.scmp.com/rss/91/feed"
+
+      - id: "Japan Times latest articles"
+      name: "Japan Times latest articles"
+      url: "https://www.japantimes.co.jp/feed/topstories/"
+
+      - id: "朝日新聞デジタル"
+      name: "朝日新聞デジタル"
+      url: "http://rss.asahi.com/rss/asahi/newsheadlines.rdf"
+
+      - id: "Japan Today"
+      name: "Japan Today"
+      url: "https://japantoday.com/feed"
+
+      - id: "World News - Breaking News, Top Stories"
+      name: "World News - Breaking News, Top Stories"
+      url: "https://www.huffpost.com/section/world-news/feed"
+
+      - id: "FOX News"
+      name: "FOX News"
+      url: "http://feeds.foxnews.com/foxnews/latest"
+
+      - id: "CNN.com - RSS Channel - App International Edition"
+      name: "CNN"
+      url: "http://rss.cnn.com/rss/edition.rss"
+
+      - id: "US Top News and Analysis"
+      name: "US Top News and Analysis"
+      url: "https://www.cnbc.com/id/100003114/device/rss/rss.html"
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -229,10 +272,10 @@ notification:
   #   执行时间不稳定，时间范围建议至少留足 2 小时
   # 💡 想要精准定时？建议使用 Docker 部署在个人服务器上
   push_window:
-    enabled: false                    # 是否启用推送时间窗口控制
-    start: "20:00"                    # 开始时间（北京时间）
-    end: "22:00"                      # 结束时间（北京时间）
-    once_per_day: true                # true=窗口内只推送一次，false=窗口内每次执行都推送
+    enabled: true                    # 是否启用推送时间窗口控制
+    start: "08:15"                    # 开始时间（北京时间）
+    end: "24:00"                      # 结束时间（北京时间）
+    once_per_day: false                # true=窗口内只推送一次，false=窗口内每次执行都推送
 
   # 推送渠道配置
   channels:
