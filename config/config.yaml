@@ -148,6 +148,19 @@ rss:
       name: "US Top News and Analysis"
       url: "https://www.cnbc.com/id/100003114/device/rss/rss.html"
 
+      # tech new
+      - id: "Fast Company"
+      name: "Fast Company"
+      url: "http://www.fastcodesign.com/rss.xml"
+
+      - id: "Forbes - Entrepreneurs"
+      name: "Forbes - Entrepreneurs"
+      url: "http://www.forbes.com/entrepreneurs/index.xml"
+
+      - id: "Tech in Asia"
+      name: "Tech in Asia"
+      url: "https://feeds2.feedburner.com/PennOlson"
+
     # 自定义源示例
     # - id: "custom-feed"
     #   name: "自定义源"
